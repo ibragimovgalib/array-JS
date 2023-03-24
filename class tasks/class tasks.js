@@ -148,7 +148,7 @@ console.log(marathonDistance([-6, 15, 4]));
 
 // test====================================================
 function test(arr) {
-    arr.shift()
+    arr.reverse()
     return arr
 }
 console.log(test(["one", "two", "three"]));

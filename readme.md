@@ -61,12 +61,14 @@ const array2 = new Array("eat", "sleep");
 >>>>> # push()
 ![img](/imgs%20md/push.png)
 
-
 >>>>> # unshift()
 ![img](/imgs%20md/unshift.png)
 
+>>>>> # pop()
+![img](/imgs%20md/pop.png)
 
->>>>> # pop()
-![img](/imgs%20md/pop.png)
->>>>> # pop()
-![img](/imgs%20md/pop.png)
+>>>>> # shift()
+![img](/imgs%20md/shift.png)
+
+>>>>> # reverce()
+![img](/imgs%20md/reverce.png)
