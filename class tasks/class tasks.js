@@ -142,3 +142,13 @@ function marathonDistance(arr) {
 console.log(marathonDistance([1, 2, 3, 4]));
 console.log(marathonDistance([1, 9, 5, 8, 2]));
 console.log(marathonDistance([-6, 15, 4]));
+
+
+
+
+// test====================================================
+function test(arr) {
+    arr.shift()
+    return arr
+}
+console.log(test(["one", "two", "three"]));
