@@ -106,18 +106,15 @@ console.log(filterArray([1, 2, "a", "b", 123, "555"]));
 
 
 // 12 How Much is True? -???????????????????????????????????????????????
-// function coutTrue(arr) {
-//     let fil = ""
-//     let rez = arr.forEach((e)=>{
-//         if(e == true) fil+=e
-//         return fil
-//     })
-//     return rez.length
-// }
-// console.log(coutTrue([true, false, false, true, false]));
-// console.log(coutTrue([false, false, false]));
-// console.log(coutTrue([]));
-
+function coutTrue(arr) {
+    let arr2 = arr.filter((e) => {
+        return e == true
+    })
+    return arr2.length
+}
+console.log(coutTrue([true, false, false, true, false]));
+console.log(coutTrue([false, false, false]));
+console.log(coutTrue([]));
 
 
 
@@ -137,10 +134,11 @@ console.log(secondLargest([2, 4, 3, 1, 5]));
 // 14 25-Mile Marathon------------------------------------------------------
 function marathonDistance(arr) {
     let red = arr.reduce(function(e1, e2) {
-        return e1 + e2
+        return Math.abs(e1) + Math.abs(e2)
     })
-    return red
+    if(red >= 25) return true
+    else return false
 }
-console.log(marathonDistance[(1, 2, 3, 4)]);
-console.log(marathonDistance[(1, 9, 5, 8, 2)]);
-console.log(marathonDistance[(-6, 15, 4)]);
+console.log(marathonDistance([1, 2, 3, 4]));
+console.log(marathonDistance([1, 9, 5, 8, 2]));
+console.log(marathonDistance([-6, 15, 4]));
