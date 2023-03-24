@@ -106,20 +106,41 @@ console.log(filterArray([1, 2, "a", "b", 123, "555"]));
 
 
 // 12 How Much is True? -???????????????????????????????????????????????
-function coutTrue(arr) {
-    let fil = ""
-    let rez = arr.forEach((e)=>{
-        if(e == true) fil+=e
-        return fil
-    })
-    return rez.length
+// function coutTrue(arr) {
+//     let fil = ""
+//     let rez = arr.forEach((e)=>{
+//         if(e == true) fil+=e
+//         return fil
+//     })
+//     return rez.length
+// }
+// console.log(coutTrue([true, false, false, true, false]));
+// console.log(coutTrue([false, false, false]));
+// console.log(coutTrue([]));
+
+
+
+
+
+// 13 Fined the Second Largest Number----------------------------------------------
+function secondLargest(arr) {
+    arr.sort((a,b) => b - a)
+    return arr[1]
 }
-console.log(coutTrue([true, false, false, true, false]));
-console.log(coutTrue([false, false, false]));
-console.log(coutTrue([]));
+console.log(secondLargest([10, 40, 30, 20, 50]));
+console.log(secondLargest([2, 4, 3, 1, 5]));
 
 
 
 
 
-// Fined the Second Largest Number----------------------------------------------
+// 14 25-Mile Marathon------------------------------------------------------
+function marathonDistance(arr) {
+    let red = arr.reduce(function(e1, e2) {
+        return e1 + e2
+    })
+    return red
+}
+console.log(marathonDistance[(1, 2, 3, 4)]);
+console.log(marathonDistance[(1, 9, 5, 8, 2)]);
+console.log(marathonDistance[(-6, 15, 4)]);
